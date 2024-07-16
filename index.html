@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navigation Bar Example</title>
+  <title>Grains & Essentials</title>
+  <link rel="icon" href="./pics/tabicon.jpg">
   <link href="styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -13,7 +14,7 @@
   <nav>
     <section class="nav-bar">
         <div class="logo">
-            <img src="./pics/logo2b.png" alt="logo">
+            <img src="./pics/logo/logo 3a.1.jpg" alt="logo">
           </div>
         <div class="nav-links">
             <a href="#">Home</a>
@@ -35,16 +36,16 @@
     <section class="mini-nav">
         <div class="icons">
             <div class="icon1">
-                 <p><i class="fa-solid fa-check tick"></i>Free delievery over 5000</p>
+                 <p class="icon-text" ><i class="fa-solid fa-check tick"></i>Free shipping</p>
             </div>           
             <div class="icon2 leaf">
-              <p> <i class="fa-solid fa-leaf"></i>100% Plastic-Free</p>
+              <p class="icon-text"> <i class="fa-solid fa-leaf"></i>100% Plastic-Free</p>
           </div> 
             <div class="icon3">
-                <p><i class="fa-solid fa-cube"></i>Delievering in Twin Cities</p>
+                <p class="icon-text"><i class="fa-solid fa-cube"></i>Delievering in Twin Cities</p>
             </div>
             <div class="icon4">
-                <p><i class="fa-solid fa-truck-fast"></i> Fast & Secure Delievery</p>
+                <p class="icon-text"><i class="fa-solid fa-truck-fast"></i> Fast & Secure Delievery</p>
             </div>
 
         </div>
@@ -54,141 +55,470 @@
 
   <main>
   <!-- main begins -->
-    <!-- hero -->
-      <section class="hero">
-        <img src="./pics/hero1.webp" alt="hero">
-        <!-- <div class="tagline">Wholesome Goodness in Every Grain</div> -->
-        <!-- <img src="./pics/hero22.webp" alt=""> -->
-        
-        <!-- right arrow -->
-        <i class="fa-solid fa-arrow-right"></i>
-        <!-- left arrow -->
-        <i class="fa-solid fa-arrow-left"></i>
-      </section>
+  <section class="hero">
+    <div class="hero-slide">
+      <!-- lentils pic -->
+      <div class="hero-content">
+        <div class="hero-text">Pure Lentils, Pure Nutrition</div>
+        <img src="./pics/lentils 2.jpg" alt="hero">
+      </div>
+    </div>
+  
+    <div class="hero-slide">
+      <!-- rice pic -->
+      <div class="hero-content">
+        <div class="hero-text">Rice That Reigns Supreme</div>
+        <img src="./pics/hero/hero2.jpg" alt="">
+      </div>
+    </div>
+  
+    <div class="hero-slide">
+      <!-- all products pic -->
+      <div class="hero-content">
+        <div class="hero-text">Nourishing Your Life, One Grain at a Time </div>
+        <img src="./pics/hero/hero4.jpg" alt="">
+      </div>
+    </div>
 
-      <section class="mini-hero">
-        <div class="mini-heroo">
-          <img src="./pics/mini_hero1.avif" alt="100% plastic free">
-          <img src="./pics/mini_hero2.avif" alt="100% plastic free">
-        </div>
-      </section>
-
-      <div class="empty"></div>
+    <div class="btn-shop">
+      <a href="#">
+        <button class="shop-now">Shop Now</button>
+      </a>
+    </div>
+  
+    <!-- right arrow -->
+    <i class="fa-solid fa-arrow-right"></i>
+    <!-- left arrow -->
+    <i class="fa-solid fa-arrow-left"></i>
+  </section>
+  
+  
 
       <section class="welcom">
         <div class="para">
-          <h2>Welcome to Grains & Essestials</h2>
-          <p>Our goal is to serve you premium quality organic wholefoods and health foods with an eco-friendly shopping experience that minimizes harm to our community, country, and planet. We offer bulk food products that are not conventionally packed. Join Grains & Essentials to take a small step in the journey towards a healthier planet
-        </p>
+          <h2>Health Begins with the Right Essentials</h2>
+          <p>Grains & Essentials offers an abundance of high quality, locally grown, farm-to-table whole foods & products.</p>
         </div>
       </section>
 
       <div class="headingList">
-        <h3>Collection List</h3>
+        <h3>Browse Categories</h3>
+        <a href="#" class="shop-all">
+          Shop all
+        </a>
       </div>
 
       <!-- collection list -->
-      <section class="collection">
+      <section class="collection categories">
        
-        <div class="list">
+        <div class="list">  
+            <div class="image-container grains-cereals">
+              <img src="./pics/categories/AdobeStock_629085287_Preview.jpeg" alt="grains and cereals" width="200" height="200">
+              <div>
+                <p>Grains and Cereals</p>
+              </div>
+            </div>
 
-          
+            <div class="image-container lentils-beans">
+              <img src="./pics/categories/lentils `.jpg" alt="lentils and beans" width="200" height="200">
+              <div>
+                <p>Lentils and Beans</p>
+              </div>
+            </div>
+
+            <div class="image-container Rice">
+              <img src="./pics/categories/rice.jpeg" alt="rice" width="200" height="200">
+              <div>
+                <p>Rice</p>
+              </div>
+            </div>
+
+            <div class="image-container cooking-baking">
+              <img src="./pics/categories/eggs.jpeg" alt="cooking-baking" width="200" height="200">
+              <div>
+                <p>Cooking and Baking</p>
+              </div>
+            </div>
+
+            
+            <div class="image-container sugar">
+              <img src="./pics/categories/sugar.jpeg" alt="sugar" width="200" height="200">
+              <div>
+                <p>Organic Sweeteners</p>
+              </div>
+            </div>
+
+
             <div class="image-container spices">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="spices" width="200" height="200">
-              <div class="overlay">Spices</div>
-            </div>
-         
-            <div class="image-container cereal">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="cereal" width="200" height="200">
-              <div class="overlay">Cereal</div>
+              <img src="./pics/categories/herbs.jpeg" alt="spices" width="200" height="200">
+              <div>
+                <p>Herbs and Spices</p>
+              </div>
             </div>
 
-            <div class="image-container cereal">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="cereal" width="200" height="200">
-              <div class="overlay">Cereal</div>
+
+            <div class="image-container nuts">
+              <img src="./pics/categories/nuts.jpeg" alt="nuts" width="200" height="200">
+              <div>
+                <p>Dried Fruit & Nuts</p>
+              </div>
             </div>
 
-            <div class="image-container cereal">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="cereal" width="200" height="200">
-              <div class="overlay">Cereal</div>
+            <div class="image-container jars">
+              <img src="./pics/categories/jars.jpeg" alt="jars" width="200" height="200">
+              <div>
+                <p>Kitchen Storage Essentials</p>
+              </div>
             </div>
 
-            <div class="image-container cereal">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="cereal" width="200" height="200">
-              <div class="overlay">Cereal</div>
-            </div>
-
-            <div class="image-container cereal">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="cereal" width="200" height="200">
-              <div class="overlay">Cereal</div>
-            </div>
-
-            <div class="image-container cereal">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="cereal" width="200" height="200">
-              <div class="overlay">Cereal</div>
-            </div>
-
-            <div class="image-container cereal">
-              <img src="./pics/pexels-martabranco-1295572.jpg" alt="cereal" width="200" height="200">
-              <div class="overlay">Cereal</div>
-            </div>
-        
-
-          
         </div>
       </section>
 
-      <<section class="hero-inner">
-        <div class="text-center">
-          <h2>Change your pantry face</h2>
-          <div class="mega-title">
-            <p>Looking for a bulk food & zero waste store to have a clean pantry?</p>
-            <p><a href="#">Come with us</a></p>
-          </div>
-        </div>
-        <!-- <img src="./pics/main pic.webp" alt="Hero Image" width="2000" height="1000"> -->
-      </section>
+      <div class="empty">
 
-      <div class="headingList">
-        <h3>Recipes</h3>
       </div>
 
+
+      <!-- new items  -->
+      <section class="seller-container">
+        <div class="Sale-products">
+
+          <div class="heading-sale-items">
+            <h1>New Arrivals</h1>
+            <div class="link-shop">
+              <a href="#" class="shop-all shop-view">View All</a>
+            </div>
+    
+          </div>
+
+          
+          <div class="items-grid">
+
+            <!-- item1 -->
+            <div class="item">
+              <img src="./pics/new-items/cardamom.jpg" alt="cardamom" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR</p>
+                <p class="sale-item-description">Cardamom</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <!-- can you style just this part? just share css file! -->
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/new-items/chickpea.jpg" alt="chickpea" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR</p>
+                <p class="sale-item-description">Chickpea</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/new-items/coffee beans.jpg" alt="coffee beans" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR</p>
+                <p class="sale-item-description">Coffee Beans</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/new-items/gluten free flour.jpg" alt="flour-gluten" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR</p>
+                <p class="sale-item-description">Flour (Gluten-Free)</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/new-items/mint.jpg" alt="mint" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR</p>
+                <p class="sale-item-description">Fresh Mint</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+      </section>
+       
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <!-- sale items -->
+      <section class="seller-container">
+        <div class="Sale-products">
+
+          <div class="heading-sale-items">
+            <h1>Sale Products</h1>
+            <div class="link-shop">
+              <a href="#" class="shop-all shop-view">View All</a>
+              <a href="#" class="shop-all">Monthly Specials</a>
+            </div>
+    
+          </div>
+
+          
+          <div class="items-grid">
+
+            <!-- item1 -->
+            <div class="item">
+              <img src="./pics/sale-items/almonds.jpg" alt="almonds" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR <span class="discounted-price">90 PKR</span></p>
+                <p class="sale-item-description">Almonds</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/sale-items/oats.jpg" alt="almonds" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR <span class="discounted-price">90 PKR</span></p>
+                <p class="sale-item-description">Oats</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/sale-items/honey.jpg" alt="almonds" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR <span class="discounted-price">90 PKR</span></p>
+                <p class="sale-item-description">Manuka Honey</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/sale-items/black pepper.jpg" alt="almonds" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR <span class="discounted-price">90 PKR</span></p>
+                <p class="sale-item-description">Black Pepper (powdered)</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+
+            <div class="item">
+              <img src="./pics/sale-items/orange dall.jpg" alt="almonds" width="200" height="200">
+
+              <div class="rest-details-sale-item">
+                <p class="before-price">100 PKR <span class="discounted-price">90 PKR</span></p>
+                <p class="sale-item-description">Orange Daal</p>
+
+                <div class="weight">
+                  <button class="weight-100">100g</button>
+                  <button class="weight-250">250g</button>
+                  <button class="weight-500">500g</button>
+                </div>
+
+                <div class="qty-counter">
+                  <button><i class="fa-solid fa-minus"></i></button>
+                  <input type="number">
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="cart-sale">Add to cart</button>
+
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+
+      <div class="heading-sale-items recipes-heading">
+        <h1>Recipe Inspiration</h1>
+        <p>See our recipe page for many more recipes to inspire your next meal</p>
+      </div>
       <!-- recipies -->
       <section class="recipes">
 
         <div class="recipe-container">
 
           <div class="article">
-            <img src="./pics/pexels-martabranco-1295572.jpg" alt="recipes" width="400" height="300">
-            <h2>Mong ki daal</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quidem in, excepturi dignissimos unde nulla minus doloremque et eius hic...</p>
-            <p><a href="#">Get Recipe</a></p>
+            <img src="./pics/recipe/recipe 1.jpg" alt="recipes" width="400" height="300">
+            <div class="recipe-descrp">
+              <p class="recipe-title" >Scrambled Eggs with White Bread</p>
+              <p><a href="#" class="recipe-link">Get Recipe</a></p>
+            </div>
           </div>
   
           <div class="article">
-            <img src="./pics/pexels-martabranco-1295572.jpg" alt="recipes" width="400" height="300">
-            <h2>Mong ki daal</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quidem in, excepturi dignissimos unde nulla minus doloremque et eius hic...</p>
-            <p><a href="#">Get Recipe</a></p>
+            <img src="./pics/recipe/recipe 2.jpg" alt="recipes" width="400" height="300">
+            <div class="recipe-descrp">
+              <p class="recipe-title" >Tofu with Tomatoes and Greens</p>
+              <p><a href="#" class="recipe-link">Get Recipe</a></p>
+            </div>
           </div>
   
           <div class="article">
-            <img src="./pics/pexels-martabranco-1295572.jpg" alt="recipes" width="400" height="300">
-            <h2>Mong ki daal</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quidem in, excepturi dignissimos unde nulla minus doloremque et eius hic...</p>
-            <p><a href="#">Get Recipe</a></p>
+            <img src="./pics/recipe/recipe 3.jpg" alt="recipes" width="400" height="300">
+            <div class="recipe-descrp">
+              <p class="recipe-title" >Deviled Eggs with Brown Rice</p>
+              <p><a href="#" class="recipe-link" >Get Recipe</a></p>
+            </div>
+            
           </div>
   
         </div>
         
       </section>
 
-      <div class="headingList">
-        <h3>Blogs</h3>
-      </div>
+ 
 
       <!-- recipies -->
-      <section class="blog-container">
+      <!-- <section class="blog-container">
 
         <div class="read">
 
@@ -215,7 +545,7 @@
   
         </div>
         
-      </section>
+      </section> -->
 
       <div class="headingList">
         <a href="#">Back to top</a>

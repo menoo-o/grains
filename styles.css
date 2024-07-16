@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --primaryColor: #2c2528;
@@ -23,23 +24,28 @@
   }
   
   nav {
-    background-color: #ADBBB4;
+    background-color: #ce6301;
+    /* background-color: #1d7150; */
     border-bottom: 1px solid #ddd;
-    height: 95px;
+    height: 110px;
   }
+
+  /* color  */
   
   .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
     padding-bottom: 0px;
     
   }
   
   .logo img {
-    width: 150px;
-    height: 85px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 135px;
+    height: 109px;
   }
   
   .nav-links, .search {
@@ -50,19 +56,20 @@
   .nav-links a, .search a {
     text-decoration: none;
     letter-spacing: 0.01em;
-    color: #FFF;
+    color: #ffffff;
     font-weight: 700;
     transition: color 0.3s;
   }
   
   .nav-links a:hover {
-    color: greenyellow;
+    color: yellow;
   }
   
   .mini-nav {
-    background-color: #fff;
+    background-color: #fafafa;
     border-bottom: 1px solid #ddd;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px;
+    height: 50px;
   }
   
   .icons {
@@ -78,19 +85,20 @@
     color: var(--primary-color);
   }
   
-  .icon p {
-    margin: 0;
-    font-weight: 700;
-    
-  }
+.icon-text{
+  font-size: 0.9em;
+  
+}
   
   .icons i{
-    font-size: 1.1em;
+    font-size: 1.05em;
     color: var(--hover-color);
     margin-right: 12px;
   }
 
-  /* Ensure hero section doesn't touch the navbar */
+  /* Ensure hero
+/* Style the hero images */
+/* Ensure hero section doesn't touch the navbar */
 .hero {
   margin-top: 50px; /* Adjust the value as necessary */
   position: relative;
@@ -98,87 +106,85 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  height: 670px; /* Ensure the hero section matches the image height */
 }
 
-/* Style the hero images */
-/* Ensure hero section doesn't touch the navbar */
-.hero {
-  margin-top: 53px; /* Adjust the value as necessary */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* Style the hero images */
-.hero img {
-  width: auto;
-  height: auto;
-  display: none; /* Hide images initially */
-}
-
-.hero img.active {
-  display: block; /* Show the active image */
-}
-
-/* Style the tagline */
-.tagline {
+.hero-slide {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #b4adad; /* White text */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 20px;
-  font-size: 1.5em; /* Adjust the size as necessary */
-  text-align: center;
-  border-radius: 10px;
-  display: none; /* Hide the tagline initially */
+  width: 100%;
+  height: 100%;
+  display: none; /* Initially hide all slides */
 }
 
-.hero img:nth-of-type(2).active ~ .tagline {
-  display: block; /* Show the tagline only when the second image is active */
+.hero-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-/* Style the arrows */
-.hero .fa-arrow-right,
-.hero .fa-arrow-left {
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  font-size: 3.5em; /* High font size */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.2); /* Add some text shadow for better readability */
+  max-width: 50%; /* Adjust as needed */
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  display: block; /* Ensure images are displayed as block elements */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.fa-arrow-right,
+.fa-arrow-left {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2em; /* Adjust the size as necessary */
-  color: #9abe18; /* Adjust the color as necessary */
+  color: #ce6301;
+  font-size: 2rem;
   cursor: pointer;
+  z-index: 10;
 }
 
-.hero .fa-arrow-right {
-  right: 10px; /* Adjust the position as necessary */
+.fa-arrow-right {
+  right: 20px;
 }
 
-.hero .fa-arrow-left {
-  left: 10px; /* Adjust the position as necessary */
+.fa-arrow-left {
+  left: 20px;
 }
 
-
-.mini-hero{
-  margin-top: 50px;
-  width: 100%;
-  height: 250px;
+.hero-slide.active {
+  display: flex; /* Show the active slide */
 }
 
-.mini-heroo{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
+.shop-now{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: rgb(255, 255, 255);
+  background-color: #ce6301;
+  font-size: 1.8em; /* High font size */
+  border-radius: 50px;
+  padding: 10px 30px;
+  max-width: 50%; /* Adjust as needed */
+  font-family: 'Montserrat', monospace;
+  font-weight: 600;
+  border: none;
 }
 
-/* welcome text */
-.empty{
-  width: 100%;
-  height: 100px;
+.shop-now:hover{
+  color: #ce6301;
+  background-color: #ddd;
 }
+
 
 .welcom{
   margin-top: 50px;
@@ -199,122 +205,238 @@
 
 .para h2{
   font-size: 2.5rem;
-  letter-spacing: 0.5pc;
-  margin-bottom: 10px;
+  letter-spacing: 0.1pc;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 420;
 }
 
 .para p{
   padding: 10px;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  line-height: 1;
+  padding-top: 5px;
+  font-size: 1.3em;
+  margin-bottom: 0px;
   text-align: center;
+}
+
+.shop-all{
+  border: none;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-weight: 380;
+  color: #5f360f;
+  font-size: 1.2em;
+  padding: 3px 5px;
 }
 
 /* collection list */
 .headingList{
+  margin-top: 0px;
   width: 100%;
-  height: 200px;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-items:end;
+  align-items:center;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   margin-bottom: 30px;
+  
 }
 
-.collection{
+.headingList h3, .heading-sale-items h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 380;
+}
+
+.categories{
   display: flex;
   justify-content: center;
-  align-items: start;
-  height: 600px;
-  background-color: rgb(255, 255, 255);
+  align-items: center;
+  padding: 10px 30px;
 }
 
-.list{
- 
+.list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(4, 350px); /* Four columns */
+  grid-template-rows: 320px 320px; /* Two rows with specific height */
+  gap: 50px; /* Adjust the gap between grid items */
+  margin-bottom: 10px ;
 }
 
 .image-container {
   position: relative;
-  width: 200px;
-  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%; /* Ensures each container fills the grid cell */
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border-radius: 10px;
 }
 
-.overlay {
+.image-container div {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border: none;
+  padding: 5px;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-.image-container:hover img {
-  opacity: 0.8; /* Adjust opacity value as needed */
-  background-color: rgba(0, 0, 0, 0.5);
+.image-container div p {
+  margin: 0;
+  font-size: 1.2rem; /* Adjust the font size as necessary */
+  font-weight: 420;
 }
 
-.image-container:hover .overlay {
-  opacity: 1;
+/* sale items - h1 , links covered above */
+.shop-view{
+  margin-right: 10px;
 }
 
-/* hero innerr */
-.hero-inner {
-  position: relative;
+.heading-sale-items{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px; /* Adjust height as needed */
-  background: url('./pics/main\ pic\ 2.webp') no-repeat center center;
-  background-size: cover;
+  flex-direction: column;
+  margin-top: 40px;
 }
 
-.text-center {
+.items-grid{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 320px); /* Four columns */
+  grid-template-rows: 320px; /* Two rows with specific height */
+  gap: 5px; /* Adjust the gap between grid items */
+  margin-bottom: 10px ;
+  
+}
+
+.item {
+  width: 300px; /* Adjust as necessary */
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Adjust as necessary */
+  margin-bottom: 60px;
+}
+
+.item img {
+  width: 100%;
+  height: 200px; /* Adjust as necessary */
+  object-fit: cover;
+}
+
+.rest-details-sale-item {
+  padding: 15px;
   text-align: center;
-  color: #fff; /* Text color */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text */
-  max-width: 80%; /* Limit text width if needed */
 }
 
-.mega-title {
-  margin-top: 20px;
-}
-
-.mega-title p {
+.before-price {
+  font-size: 1.2rem; /* Adjust as necessary */
+  font-weight: bold;
+  color: #333;
   margin: 10px 0;
 }
 
-.mega-title a {
-  color: #fff; /* Link color */
-  text-decoration: none;
-  border-bottom: 1px solid #fff; /* Underline effect */
+.sale-item-description {
+  font-size: 1rem; /* Adjust as necessary */
+  color: #555;
+  margin: 10px 0;
 }
 
-.mega-title a:hover {
-  opacity: 0.8; /* Adjust opacity on hover */
+.weight {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
 }
+
+.weight button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.weight button:hover {
+  background-color: #ddd;
+}
+
+.qty-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  gap: 5px;
+}
+
+.qty-counter button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem; /* Adjust as necessary */
+}
+
+.qty-counter button:hover {
+  background-color: #e65b50;
+}
+
+.qty-counter input[type="number"] {
+  width: 40px;
+  padding: 3px 0px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem; /* Adjust as necessary */
+}
+
+.qty-counter .plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qty-counter .plus i {
+  font-size: 1rem; /* Adjust as necessary */
+}
+
+
+.cart-sale {
+  display: inline-block;
+  background-color: #ffa061;
+  color: white;
+  border: none;
+  padding: 8px 48px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust as necessary */
+  transition: background-color 0.3s;
+}
+
+.cart-sale:hover {
+  background-color: #e65b50;
+}
+
 
 /* recipies + blogs */
 .recipes, .blog-container{
+  margin-top: 0px;
   width: 100%;
   height: 800px;
   display: flex;
@@ -324,16 +446,43 @@
 
 .recipe-container, .read{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 450px);
   grid-template-rows: 1fr;
-  gap: 30px;
+  gap: 20px;
+}
+
+.recipe-descrp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .article, .blog{
-  width: 400px;
+  width: 420px;
   height: 600px;
 }
 
+.article img{
+  width: 100%;
+  height: 580px;
+}
+
+.recipe-title{
+  font-size: 1.1em;
+  font-weight: 420;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.recipe-link{
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #555;
+  text-transform: lowercase;
+  border: 1px solid black;
+  padding: 7px 15px;
+}
 /* footer */
 footer {
   background-color: #333; /* Background color */
@@ -382,4 +531,13 @@ footer {
 
 .social-media a:hover {
   color: #ffd700; /* Change icon color on hover */
+}
+
+
+
+
+/* space + free classes */
+.empty{
+  width: 100%;
+  height: 50px;
 }
